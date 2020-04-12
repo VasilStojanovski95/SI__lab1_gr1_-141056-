@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 class Student {
 	String index;
@@ -41,5 +42,15 @@ class Student {
 			{
 				return false;
 			}
+	}
+}
+
+class Course
+{
+	List<Student> students = new ArrayList<>();
+	
+	public void AddStudent(Student student)
+	{
+		students.add(student);
 	}
 }
